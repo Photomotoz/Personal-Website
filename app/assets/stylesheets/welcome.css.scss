@@ -1,3 +1,16 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html{
+	background-image: url('../images/Grand Canyon.jpg');
+	background-size : cover;
+
+}
+
+.github_button{
+	margin: 0 auto;
+	width: 120px;
+	display: block;
+    cursor: pointer;
+}
