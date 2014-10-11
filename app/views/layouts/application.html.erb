@@ -12,7 +12,13 @@
 <%= nav_bar :fixed => :top do %>
     <%= menu_group do %>
         <%= menu_item "Home", root_path %>
-        <%= menu_item "Photo Gallery", 'gallery' %>
+        <%= menu_item "Photo Gallery", '/gallery' %>
+        <%= drop_down "Web Zoo" do %>
+      		<%= menu_item "Anatomy", '/zoo/anatomy'  %>
+       		<%= menu_item "Dance Party", '/zoo/danceParty' %>
+      		<%= menu_item "Secret Scene", '/zoo/secretScene' %>
+       		<%= menu_item "Special", '/zoo/special' %>
+        <% end %>
     <% end %>
 <% end %>
 <%= yield %>

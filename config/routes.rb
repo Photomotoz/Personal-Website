@@ -10,6 +10,12 @@ Rails.application.routes.draw do
 # =>
   get 'gallery' => 'gallery#index'
 
+
+  get 'zoo/:name' => 'zoo#index'
+  get 'zoo/:name' => 'zoo#index'
+  get 'zoo/:name' => 'zoo#index'
+  get 'zoo/:name' => 'zoo#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
