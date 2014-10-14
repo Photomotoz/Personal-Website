@@ -1,9 +1,6 @@
 class ZooController < ApplicationController
 
-
-
 	def index
-
 
 		case params[:name]
 		when 'anatomy'
@@ -17,8 +14,5 @@ class ZooController < ApplicationController
 		end
 
 	end
-
-
-
 
 end
