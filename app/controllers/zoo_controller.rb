@@ -11,8 +11,9 @@ class ZooController < ApplicationController
 			@unityLevel = "Special.unity3d"
 		when 'secretScene'
 			@unityLevel = "Secret Scene.unity3d"
+		when 'jonsScene'
+			@unityLevel = "Jons Scene.unity3d"
 		end
-
 	end
 
 end

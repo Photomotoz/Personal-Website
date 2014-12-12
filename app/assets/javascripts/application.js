@@ -15,3 +15,4 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require UnityObject2
+//= require zoo

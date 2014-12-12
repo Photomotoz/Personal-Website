@@ -18,10 +18,25 @@
        		<%= menu_item "Dance Party", '/zoo/danceParty' %>
       		<%= menu_item "Secret Scene", '/zoo/secretScene' %>
        		<%= menu_item "Special", '/zoo/special' %>
+          <%= menu_item "Jon's Scene", '/zoo/jonsScene' %>
         <% end %>
     <% end %>
 <% end %>
 <%= yield %>
+
+
+
+<% (0..14).each do |i| %>
+
+<div id= "vert-laser-line-<%="#{i}"%>"></div>
+
+<% end %>
+
+<% (0..10).each do |i| %>
+
+<div id= "horiz-laser-line-<%="#{i}"%>"></div>
+
+<% end %>
 
 </body>
 </html>
