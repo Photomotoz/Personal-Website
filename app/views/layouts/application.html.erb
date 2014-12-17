@@ -12,7 +12,7 @@
 <%= nav_bar :fixed => :top do %>
     <%= menu_group do %>
         <%= menu_item "Home", root_path %>
-        <%= menu_item "Photo Gallery", '/gallery' %>
+        <%#= menu_item "Photo Gallery", '/gallery' %>
         <%= drop_down "Web Zoo" do %>
       		<%= menu_item "Anatomy", '/zoo/anatomy'  %>
        		<%= menu_item "Dance Party", '/zoo/danceParty' %>
@@ -26,15 +26,15 @@
 
 
 
-<% (0..14).each do |i| %>
+<% (0..VERTICAL_LASER_LINES).each do |i| %>
 
-<div id= "vert-laser-line-<%="#{i}"%>"></div>
+  <div id= "vert-laser-line-<%="#{i}"%>"></div>
 
 <% end %>
 
-<% (0..10).each do |i| %>
+<% (0..HORIZONTAL_LASER_LINES).each do |i| %>
 
-<div id= "horiz-laser-line-<%="#{i}"%>"></div>
+  <div id= "horiz-laser-line-<%="#{i}"%>"></div>
 
 <% end %>
 

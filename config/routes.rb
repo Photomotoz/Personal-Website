@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # 	controller/
   root 'welcome#index'
 # =>
-  get 'gallery' => 'gallery#index'
+  # get 'gallery' => 'gallery#index'
 
 
   get 'zoo/:name' => 'zoo#index'
