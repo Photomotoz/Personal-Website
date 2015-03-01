@@ -1,0 +1,5 @@
+<ul class="rslides">
+	<% @images.each do |image| %>
+		<li> <%= image_tag image.file_url, :alt => image.alt_text %> </li>
+ 	<% end %>
+</ul>

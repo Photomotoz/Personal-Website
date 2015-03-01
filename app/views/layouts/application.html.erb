@@ -12,13 +12,11 @@
 <%= nav_bar :fixed => :top do %>
     <%= menu_group do %>
         <%= menu_item "Home", root_path %>
-        <%#= menu_item "Photo Gallery", '/gallery' %>
+        <%= menu_item "Photo Gallery", gallery_path %>
         <%= drop_down "Web Zoo" do %>
-      		<%= menu_item "Anatomy", '/zoo/anatomy'  %>
-       		<%= menu_item "Dance Party", '/zoo/danceParty' %>
-      		<%= menu_item "Secret Scene", '/zoo/secretScene' %>
-       		<%= menu_item "Special", '/zoo/special' %>
-          <%= menu_item "Jon's Scene", '/zoo/jonsScene' %>
+          <% ["Anatomy", "Dance Party", "Secret Scene", "Special", "Jon's Scene"].each do |item| %>
+            <%= menu_item item, zoo_path(:name => item.gsub(" ", "_").gsub("'", "").camelize(:lower)) %>
+          <% end %>
         <% end %>
     <% end %>
 <% end %>

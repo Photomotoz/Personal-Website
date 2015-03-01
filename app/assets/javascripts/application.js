@@ -16,3 +16,9 @@
 //= require turbolinks
 //= require UnityObject2
 //= require zoo
+//= require responsiveslides
+
+
+ $(function() {
+    $(".rslides").responsiveSlides();
+  });
