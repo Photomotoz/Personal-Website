@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-	background-image: asset-url('BackgroundBase.png', image);
+	background-image: image-url("BackgroundBase.png");
 	background-repeat: repeat;
 }
 
