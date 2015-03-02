@@ -32,8 +32,8 @@ gem 'binding_of_caller', group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-#Using node as JS
-gem "node"
+gem 'execjs'
+gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
 # Use BootStrap for fancy UI
