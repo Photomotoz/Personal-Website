@@ -32,6 +32,9 @@ gem 'binding_of_caller', group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'bundler', '>= 1.7.0'
+gem 'rails-assets-animateCSS'
+
 gem 'execjs'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
@@ -47,4 +50,10 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
 

@@ -19,6 +19,7 @@
 //= require responsiveslides
 
 
- $(function() {
-    $(".rslides").responsiveSlides();
-  });
+$(function() {
+	$(".rslides").responsiveSlides();
+});
+
