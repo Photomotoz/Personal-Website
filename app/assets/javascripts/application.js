@@ -20,7 +20,7 @@
 //= require responsiveslides
 
 
-$(function() {
+$(document).ready(function(){
 	$(".rslides").responsiveSlides();
 });
 
