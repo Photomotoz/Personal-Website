@@ -21,6 +21,9 @@
 
 
 $(document).ready(function(){
-	$(".rslides").responsiveSlides();
+	$(".rslides").responsiveSlides({
+		timeout:1500
+
+	});
 });
 
